@@ -6,7 +6,7 @@ value='{"x":"5", "y":"2", "myArray": [3, 7,8]}'><br>
 
 <input type=button value="show Object" onclick="{
 
-  myCoolObject = {'x':'5', 'y':'2', 'myArray': [3,7,8]}
+  myCoolObject = JSON.parse(document.getElementById('myInput').value)
 
   document.getElementById('myDiv01').innerHTML = `This is x: `+
    myCoolObject.x +`, this is y: ` + myCoolObject.y + `<br>` +
