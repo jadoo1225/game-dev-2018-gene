@@ -1,0 +1,20 @@
+<h2 align=center>Trying to seperate a complex object array by Gene</h2>
+open debug window ctrl-shift-i<br><br>
+
+<input id="myInput" type=text size=100 
+value='{"x":"5", "y":"2", "myArray": [3, 7,8]}'><br>
+
+<input type=button value="show Object" onclick="{
+
+  myCoolObject = {'x':'5', 'y':'2', 'myArray': [3,7,8]}
+
+  document.getElementById('myDiv01').innerHTML = `This is x: `+
+   myCoolObject.x +`, this is y: ` + myCoolObject.y + `<br>` +
+   `Lets print an array `+ myCoolObject.myArray + `<br>` +
+   `Lets print the last number of the array `+
+    myCoolObject.myArray[2] + `<br>`  
+
+
+}"><br>
+
+<div id="myDiv01">...</div> 
