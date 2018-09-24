@@ -1,0 +1,37 @@
+<input type=text id="myText01" value=15>
+<input type=button value="click" onclick="{
+
+document.getElementById('myDiv01').innerHTML = ''
+
+ for(let x=0; x < document.getElementById('myText01').value; x++){
+if(x % 2 == 0){document.getElementById('myDiv01').innerHTML += `odd, `}
+
+if(x<=3){document.getElementById('myDiv01').innerHTML += ` ??? `}
+
+if(x % 2 == 0){document.getElementById('myDiv01').innerHTML += `wow a odd  and, `}
+
+if(x == 5){document.getElementById('myDiv01').innerHTML += `I love number5 `}
+
+if(x == 7){document.getElementById('myDiv01').innerHTML += ` Lucky Seven `}
+
+if(x == 10){document.getElementById('myDiv01').innerHTML += ` Nice Job `}
+
+if(x == 100){document.getElementById('myDiv01').innerHTML += `Hundred~~ `}
+
+if((x>=20)&&(x<=30)){document.getElementById('myDiv01').innerHTML += `ABCD `}
+
+if(x!=18){document.getElementById('myDiv01').innerHTML += `F `}
+
+
+
+document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>`}
+
+
+
+
+      
+	
+
+}">
+
+<div id="myDiv01">...</div>
