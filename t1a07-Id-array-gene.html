@@ -1,0 +1,20 @@
+<h2 align=venter> ID Arrays by Gene</h2>
+
+<input type=text value=3 id="myText01">
+
+<input type=button value="idarray" onclick="{
+myProgramTerms = [] // creates an array
+
+myProgramTerms[0] = `variables`
+myProgramTerms[1] = `dicisions`
+myProgramTerms[2] = `for loops`
+document.getElementById('myDiv01').innerHTML=''
+
+for(let myLoop=0; myLoop < 3; myLoop++ ){document.getElementById('myDiv01').innerHTML += myLoop +`:`+ myProgramTerms[myLoop]+'<br>'
+}
+
+
+
+}">
+
+<div id="myDiv01">...</div>
