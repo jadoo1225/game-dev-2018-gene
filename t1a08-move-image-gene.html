@@ -1,0 +1,95 @@
+<h3 align=center > MY moving Images by Gene<h/3>
+<script>
+
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+myStart = new Date().getTime()
+
+document.onkeydown = checkKey;
+
+function checkKey(myEvent) {
+   let myEnd = new Date().getTime()
+   let myDuration = Math.round((myEnd-myStart)/1000)
+   document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration + ', keyCode: '+myEvent.keyCode
+
+ 
+ if(myHitOther('myImage01','myImage03')){alert('GameOver')}
+ if(myHitOther('myImage02','myImage03')){alert('GameOver')}
+ if(myHitOther('myImage01','myImage02')){alert('GameOver')}
+
+ if (myEvent.keyCode == 87){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(0deg)'}
+ if (myEvent.keyCode == 65){document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(270deg)'}
+ if (myEvent.keyCode == 68){document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(90deg)'}
+ if (myEvent.keyCode == 83){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(180deg)'}
+
+ if (myEvent.keyCode == 38){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) - 10 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(0deg)'}
+ if (myEvent.keyCode == 37){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) - 10 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(270deg)'}
+ if (myEvent.keyCode == 39){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) + 10 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(90deg)'}
+ if (myEvent.keyCode == 40){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + 10 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(180deg)'}
+
+
+}
+</script>
+
+
+<div id="myDiv01">...</div>
+
+<img id="myImage01" width=100
+src="https://media.giphy.com/media/dJezVlwfVulTykjRQj/giphy.gif" style="position:absolute; left:600px; top:400px; width:100; height:100">
+
+<img id="myImage02" width=200
+src="https://cdn.dribbble.com/users/52627/screenshots/2200411/___-2.gif" style="position:absolute; left:200px; top:300px; width:100; height:100">
+
+<img id="myImage03" width=200
+src="https://i.pinimg.com/originals/86/d0/fb/86d0fb35e48f373fabd1ca133863714d.gif" style="position:absolute; left:800px; top:100px; width:100; height:100">
+
+
+<br>Image1<input type=button value="up1" onclick="{document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+}">
+<input type=button value="right1" onclick="{document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+}">
+<input type=button value="left1" onclick="{document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+}">
+<input type=button value="down1" onclick="{document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+}"><br>
+
+Image2<input type=button value="up2" onclick="{document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) - 10 + 'px'
+}">
+<input type=button value="right2" onclick="{document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left) + 10 + 'px'
+}">
+<input type=button value="left2" onclick="{document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left) - 10 + 'px'
+}">
+<input type=button value="down2" onclick="{document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) + 10 + 'px'
+}"><br>
+
+Image3<input type=button value="up3" onclick="{document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) - 10 + 'px'
+}">
+<input type=button value="right3" onclick="{document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) + 10 + 'px'
+}">
+<input type=button value="left3" onclick="{document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) - 10 + 'px'
+}">
+<input type=button value="down3" onclick="{document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + 10 + 'px'
+}">
