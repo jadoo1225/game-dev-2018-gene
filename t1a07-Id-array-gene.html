@@ -17,4 +17,28 @@ for(let myLoop=0; myLoop < 3; myLoop++ ){document.getElementById('myDiv01').inne
 
 }">
 
+
+<input type=text value=3 id="myText01">
+
+<input type=button value="JosephThing" onclick="{
+myProgramTerms = [] // creates an array
+
+myProgramTerms[0] = `Shin`
+myProgramTerms[1] = `Noodle`
+myProgramTerms[2] = `Joseph`
+myProgramTerms[3] = `JosephShin`
+document.getElementById('myDiv01').innerHTML=''
+
+for(let myLoop=0; myLoop < 4; myLoop++ ){document.getElementById('myDiv01').innerHTML += myLoop +`:`+ myProgramTerms[myLoop]+'<br>'
+}
+
+
+
+}">
+
+
+
+
+
+
 <div id="myDiv01">...</div>
