@@ -1,4 +1,9 @@
-<h3 align=center > MY moving Images by Gene<h/3>
+
+<h3 align=center > MY moving Images by Gene<br>
+ Alien must run away from rocket and must not touch rocks!!<br>
+ Rocket must catch Alien in 60s. Rocket can go through rocks<h/3>
+
+
 <script>
 
 function myHitOther(my1,my2){
@@ -22,15 +27,25 @@ myStart = new Date().getTime()
 
 document.onkeydown = checkKey;
 
+
+
 function checkKey(myEvent) {
    let myEnd = new Date().getTime()
    let myDuration = Math.round((myEnd-myStart)/1000)
    document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration + ', keyCode: '+myEvent.keyCode
 
  
- if(myHitOther('myImage01','myImage03')){alert('GameOver')}
- if(myHitOther('myImage02','myImage03')){alert('GameOver')}
- if(myHitOther('myImage01','myImage02')){alert('GameOver')}
+ if(myHitOther('myImage01','myImage03')){alert('Rocket win')}
+ if(myHitOther('myImage02','myImage03')){alert('Rocket win')}
+ if(myHitOther('myImage04','myImage03')){alert('Rocket win')}
+ if(myHitOther('myImage05','myImage03')){alert('Rocket win')}
+ if(myHitOther('myImage06','myImage03')){alert('Rocket win')}
+ 
+
+
+ 
+ 
+ 
 
  if (myEvent.keyCode == 87){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
      document.getElementById('myImage01').style.transform= 'rotate(0deg)'}
@@ -41,13 +56,13 @@ function checkKey(myEvent) {
  if (myEvent.keyCode == 83){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
      document.getElementById('myImage01').style.transform= 'rotate(180deg)'}
 
- if (myEvent.keyCode == 38){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) - 10 + 'px'
+ if (myEvent.keyCode == 38){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) - 14 + 'px'
      document.getElementById('myImage03').style.transform= 'rotate(0deg)'}
- if (myEvent.keyCode == 37){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) - 10 + 'px'
+ if (myEvent.keyCode == 37){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) - 14 + 'px'
      document.getElementById('myImage03').style.transform= 'rotate(270deg)'}
- if (myEvent.keyCode == 39){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) + 10 + 'px'
+ if (myEvent.keyCode == 39){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) + 14 + 'px'
      document.getElementById('myImage03').style.transform= 'rotate(90deg)'}
- if (myEvent.keyCode == 40){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + 10 + 'px'
+ if (myEvent.keyCode == 40){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + 14 + 'px'
      document.getElementById('myImage03').style.transform= 'rotate(180deg)'}
 
 
@@ -61,10 +76,17 @@ function checkKey(myEvent) {
 src="https://media.giphy.com/media/dJezVlwfVulTykjRQj/giphy.gif" style="position:absolute; left:600px; top:400px; width:100; height:100">
 
 <img id="myImage02" width=200
-src="https://cdn.dribbble.com/users/52627/screenshots/2200411/___-2.gif" style="position:absolute; left:200px; top:300px; width:100; height:100">
+src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:200px; top:300px; width:100; height:100">
 
 <img id="myImage03" width=200
-src="https://i.pinimg.com/originals/86/d0/fb/86d0fb35e48f373fabd1ca133863714d.gif" style="position:absolute; left:800px; top:100px; width:100; height:100">
+src="https://art.ngfiles.com/images/580000/580863_redemer19_idubbbz-alien-dance.gif?f1515990651" style="position:absolute; left:800px; top:100px; width:100; height:100">
+
+<img id="myImage04" width=200
+src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:650px; top:300px; width:100; height:100">
+<img id="myImage05" width=200
+src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:650px; top:200px; width:100; height:100">
+<img id="myImage06" width=200
+src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:80px; top:50px; width:100; height:100">
 
 
 <br>Image1<input type=button value="up1" onclick="{document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
