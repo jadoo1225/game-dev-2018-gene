@@ -1,0 +1,26 @@
+<h3 align=center> 2D arrays by Gene</h2>
+<div id="myDiv01">...</div>
+<input id="myInput" type=text size=100 > <---put only number FIRST!!!
+<input type=button value="Generate 2D ARRAY" onclick="{document.getElementById('myDiv01').innerHTML = ' ' 
+ let myChart= []
+ myChart[0] = []
+ myChart[1] = []
+
+ 
+
+ myChart[0][0] = 3
+ myChart[0][1] = 5
+ myChart[0][2] = 7
+ myChart[1][0] = 4
+ myChart[1][1] = 8
+ myChart[1][2] = 12
+
+ myCoolObject = JSON.parse(document.getElementById('myInput').value)
+
+document.getElementById('myDiv01').innerHTML += `
+<table border=1>
+<tr><td> ${myChart[0][0]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][2]} </td><td> wow ${myCoolObject} </td></tr>
+<tr><td> ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[1][2]} </td><td> wow ${myCoolObject} </td></tr>
+<table>`
+
+}">
