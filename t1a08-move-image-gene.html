@@ -1,7 +1,9 @@
 
+
 <h3 align=center > MY moving Images by Gene<br>
- Alien must run away from rocket and must not touch rocks!!<br>
- Rocket must catch Alien in 60s. Rocket can go through rocks<h/3>
+ Alien must gey away from rocket and must not touch wall!!<br>
+ Rocket must catch Alien within 60s. Rocket can go through walls.<br>
+ The Storm will help Alien<h/3>
 
 
 <script>
@@ -34,12 +36,15 @@ function checkKey(myEvent) {
    let myDuration = Math.round((myEnd-myStart)/1000)
    document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration + ', keyCode: '+myEvent.keyCode
 
+	if(myDuration >= 60){alert ('Alien Win!')} 
  
  if(myHitOther('myImage01','myImage03')){alert('Rocket win')}
  if(myHitOther('myImage02','myImage03')){alert('Rocket win')}
  if(myHitOther('myImage04','myImage03')){alert('Rocket win')}
  if(myHitOther('myImage05','myImage03')){alert('Rocket win')}
  if(myHitOther('myImage06','myImage03')){alert('Rocket win')}
+ if(myHitOther('myImage07','myImage03')){document.getElementById('myImage03').style="position:absolute; left:850px; top:400px; width:65; height:65"}
+ 
  
 
 
@@ -73,13 +78,13 @@ function checkKey(myEvent) {
 <div id="myDiv01">...</div>
 
 <img id="myImage01" width=100
-src="https://media.giphy.com/media/dJezVlwfVulTykjRQj/giphy.gif" style="position:absolute; left:600px; top:400px; width:100; height:100">
+src="https://media.giphy.com/media/dJezVlwfVulTykjRQj/giphy.gif" style="position:absolute; left:0px; top:0px; width:100; height:100">
 
 <img id="myImage02" width=200
 src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:200px; top:300px; width:100; height:100">
 
-<img id="myImage03" width=200
-src="https://art.ngfiles.com/images/580000/580863_redemer19_idubbbz-alien-dance.gif?f1515990651" style="position:absolute; left:800px; top:100px; width:100; height:100">
+<img id="myImage03" width=50
+src="https://art.ngfiles.com/images/580000/580863_redemer19_idubbbz-alien-dance.gif?f1515990651" style="position:absolute; left:850px; top:400px; width:65; height:65">
 
 <img id="myImage04" width=200
 src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:650px; top:300px; width:100; height:100">
@@ -87,6 +92,12 @@ src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356
 src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:650px; top:200px; width:100; height:100">
 <img id="myImage06" width=200
 src="https://static1.squarespace.com/static/57349682f850828b81e4d8fd/574cc6f3356fb0bb345fe3ae/574cc7a859827e39bd5dcf19/1464650565257/Pea+Gravel+1.jpg?format=1000w" style="position:absolute; left:80px; top:50px; width:100; height:100">
+<img id="myImage07" width=200
+src="https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F99916A3359C745F42E2B4C" style="position:absolute; left:150px; top:155px; width:140; height:140">
+
+<img id="myImage08" width=10
+src="https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F99916A3359C745F42E2B4C" style="position:absolute; left:850px; top:400px; width:20; height:20">
+
 
 
 <br>Image1<input type=button value="up1" onclick="{document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
@@ -115,3 +126,4 @@ Image3<input type=button value="up3" onclick="{document.getElementById('myImage0
 }">
 <input type=button value="down3" onclick="{document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + 10 + 'px'
 }">
+
