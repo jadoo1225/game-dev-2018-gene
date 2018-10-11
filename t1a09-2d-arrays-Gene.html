@@ -1,7 +1,7 @@
 <h3 align=center> 2D arrays by Gene</h2>
-<div id="myDiv01">...</div>
-<input id="myInput" type=text size=100 > <---put only number FIRST!!!
-<input type=button value="Generate 2D ARRAY" onclick="{document.getElementById('myDiv01').innerHTML = ' ' 
+
+<div id="myDiv02">...</div>
+<input type=button value="NO.1 NORMAL 2D ARRAY" onclick="{document.getElementById('myDiv02').innerHTML = ' ' 
  let myChart= []
  myChart[0] = []
  myChart[1] = []
@@ -15,12 +15,42 @@
  myChart[1][1] = 8
  myChart[1][2] = 12
 
+
+
+document.getElementById('myDiv02').innerHTML += `
+<table border=1>
+<tr><td> ${myChart[0][0]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][2]}  </td></tr>
+<tr><td> ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[1][2]}  </td></tr>
+<table>`
+}">
+<br><br>
+
+
+<div id="myDiv01">put number <b>FIRST</b> only number</div>
+<input id="myInput" type=text size=100 >  It will show you square, cube.
+<input type=button value="NO.2 SPECIAL 2D ARRAY" onclick="{document.getElementById('myDiv01').innerHTML = ' ' 
+
+
  myCoolObject = JSON.parse(document.getElementById('myInput').value)
 
 document.getElementById('myDiv01').innerHTML += `
 <table border=1>
-<tr><td> ${myChart[0][0]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][2]} </td><td> wow ${myCoolObject} </td></tr>
-<tr><td> ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[1][2]} </td><td> wow ${myCoolObject} </td></tr>
+<tr><td> ${myCoolObject} </td><td> ${myCoolObject * myCoolObject} </td><td> ${myCoolObject * myCoolObject * myCoolObject} </td></tr>
 <table>`
+}">
 
+
+<br><br>
+
+<div id="myDiv03">put number <b>FIRST</b> only number</div>
+<input id="myInput01" type=text size=100 >  It will time 0.5.
+<input type=button value="NO.3 SPECIAL 2D ARRAY" onclick="{document.getElementById('myDiv03').innerHTML = ' ' 
+
+ myCoolObject = JSON.parse(document.getElementById('myInput01').value)
+
+document.getElementById('myDiv03').innerHTML += `
+<table border=1>
+<tr><td> ${myCoolObject} </td><td> ${myCoolObject / 2} </td><td> ${myCoolObject / 4}  </td></tr>
+<tr><td> ${myCoolObject / 8} </td><td> ${myCoolObject / 16} </td><td> ${myCoolObject / 32}  </td></tr>
+<table>`
 }">
