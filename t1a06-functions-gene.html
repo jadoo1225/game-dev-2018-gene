@@ -16,6 +16,17 @@ function myFunction123(){
      (parseFloat(document.getElementById('myText03').value) * 3)
 }
 
+function myFun789(){
+   document.getElementById('myDiv04').innerHTML = `${document.getElementById('myText04').value} x 
+${document.getElementById('myText05').value} = `+ 
+     document.getElementById('myText04').value * document.getElementById('myText05').value
+}
+
+function myFun456(){
+   document.getElementById('myDiv10').innerHTML = `${document.getElementById('myText10').value} / 
+${document.getElementById('myText11').value} = `+ 
+     document.getElementById('myText10').value / document.getElementById('myText11').value
+}
 
 </script>
 
@@ -38,7 +49,17 @@ function myFunction123(){
 <input type=text value=3 id="myText03">
 <input type=button value="Run x3 Fuction" onclick="{
     myFunction123()}">
-<div id="myDiv03">...</div>
+<div id="myDiv03">...</div><br><br><br>
+
+<input type=text value=3 id="myText04"><input type=text value=3 id="myText05">
+<input type=button value="Run x Fuction  ver.2" onclick="{
+    myFun789()}">
+<div id="myDiv04">...</div><br><br><br>
+
+<input type=text value=3 id="myText10"><input type=text value=3 id="myText11">
+<input type=button value="Run / Fuction" onclick="{
+    myFun456()}">
+<div id="myDiv10">...</div>
 
 
 
