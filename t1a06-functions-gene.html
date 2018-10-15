@@ -1,26 +1,45 @@
 <script>
 function myFun(){
-
-   document.getElementById('myDiv01').innerHTML = ` `+document.getElementById('myText01').value+` x `+document.getElementById('myText01').value+` = `+
-   document.getElementById('myText01').value * document.getElementById('myText01').value
+   document.getElementById('myDiv01').innerHTML = `${document.getElementById('myText01').value} x 
+${document.getElementById('myText01').value} = `+ 
+     document.getElementById('myText01').value * document.getElementById('myText01').value
 }
-</script>
 
+function myFunction(){
+   document.getElementById('myDiv02').innerHTML = `${document.getElementById('myText02').value} + 
+${document.getElementById('myText02').value} = `+ 
+     (parseFloat(document.getElementById('myText02').value) + parseFloat(document.getElementById('myText02').value))
+}
+
+function myFunction123(){
+   document.getElementById('myDiv03').innerHTML = `${document.getElementById('myText03').value} x 3 = `+ 
+     (parseFloat(document.getElementById('myText03').value) * 3)
+}
+
+
+</script>
 
 <h2 align=center> Functions by Gene</h2>
 
-<input type=text value=3 id="myText01">
-<input type=button value="run functioooooon" onclick="{
+<input type=text value=3 id="myText01" >
 
-function myFun(){
-
-   document.getElementById('myDiv01').innerHTML = ``+document.getElementById('myText01').value+` x `+document.getElementById('myText01').value+` = `+
-   document.getElementById('myText01').value * document.getElementById('myText01').value
-x = document.getElementById('myIn').value
-   if(
-}
-
-myFun()
-	
+<input type=button value="Run x Function" onclick="{
+    myFun()
 }">
-<div id="myDiv01">...</div>
+
+<div id="myDiv01">...</div><br><br><br>
+
+<input type=text value=3 id="myText02">
+<input type=button value="Run + Fuction" onclick="{
+    myFunction()}">
+<div id="myDiv02">...</div><br><br><br>
+
+
+<input type=text value=3 id="myText03">
+<input type=button value="Run x3 Fuction" onclick="{
+    myFunction123()}">
+<div id="myDiv03">...</div>
+
+
+
+
