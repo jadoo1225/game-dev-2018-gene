@@ -1,0 +1,76 @@
+<h2 align=center>String Maniputlation Functions by Gene</h2>
+<a href="https://w3schools.com/jsref/jsref_obj_string.asp">lookup</a><br><br>
+//---------------------------------------------------------<br>
+<input id="myIn" type=text value="Word, cat">
+<input type=button value="toUpperCase()" onclick="{
+ document.getElementById('myOut').innerHTML = 
+  document.getElementById('myIn').value.toUpperCase()
+           
+}">
+<div id="myOut">...</div><br><br><br>
+
+//---------------------------------------------------------<br>
+<input id="myIn1" type=text value="Word, cat">
+<input type=button value="toLowerCase()" onclick="{
+ document.getElementById('myOut1').innerHTML = 
+  document.getElementById('myIn1').value.toLowerCase()
+           
+}">
+<div id="myOut1">...</div><br><br><br>
+
+//---------------------------------------------------------<br>
+<input id="myIn2" type=text value="Hello, Good morning!">
+<input id="myIn0" type=text value=1>put only number in second textbox!<br>
+<input type=button value="repeat()" onclick="{
+ document.getElementById('myOut2').innerHTML = 
+  document.getElementById('myIn2').value.repeat(document.getElementById('myIn0').value)
+           
+}">
+<div id="myOut2">...</div><br><br><br>
+
+//---------------------------------------------------------<br>
+Click the button to display the first character of the string. Change the number of second text box and try it again <br>
+<input id="myIn3" type=text value="My Name Is Gene">
+<input id="myIn01" type=text value=0>
+<input type=button value="charAt()" onclick="{
+ document.getElementById('myOut3').innerHTML = 
+  document.getElementById('myIn3').value.charAt(document.getElementById('myIn01').value)
+           
+}">
+<div id="myOut3">...</div><br><br><br>
+
+//---------------------------------------------------------<br>
+<input id="myIn4" type=text value="I like cat">
+<input type=button value="replace()" onclick="{
+ document.getElementById('myOut4').innerHTML = 
+  document.getElementById('myIn4').value.replace()
+           
+}">
+<div id="myOut4">I like dog</div><br><br><br>
+
+//---------------------------------------------------------<br>
+<input id="myIn5" type=text value="I can fly, cry, dry, and fry">
+<input type=button value="match(ry)" onclick="{
+ document.getElementById('myOut5').innerHTML = 
+  document.getElementById('myIn5').value.match(/ry/g)
+           
+}">
+<div id="myOut5">...</div><br><br><br>
+
+//---------------------------------------------------------<br>
+<input id="myIn6" type=text value="I like playing baseball">
+<input type=button value="toString()" onclick="{
+ document.getElementById('myOut6').innerHTML = 
+  document.getElementById('myIn6').value.toString()
+           
+}">
+<div id="myOut6">...</div><br><br><br>
+
+//---------------------------------------------------------<br>
+<input id="myIn7" type=text value="Hello Welcome to Canada">
+<input type=button value="toLocaleLowerCase()" onclick="{
+ document.getElementById('myOut7').innerHTML = 
+  document.getElementById('myIn7').value.toLocaleLowerCase()
+           
+}">
+<div id="myOut7">...</div><br><br><br>
