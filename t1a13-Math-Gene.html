@@ -1,0 +1,85 @@
+<h2 align=center>Math Function by Gene</h2>
+<a href="https://www.w3schools.com/jsref/jsref_obj_math.asp">Javascript Math function 1</a><br>
+<a href="https://www.w3schools.com/js/js_math.asp">Javascript Math function 2</a><br><br>
+
+<input id="myIn" type=text value="64"><br>
+<input type=button value="Math.sqrt()" onclick= "{
+ document.getElementById('myOut').innerHTML = 
+ Math.sqrt(parseFloat(document.getElementById('myIn').value))
+}">
+<input type=button value="Math.cbrt()" onclick= "{
+ document.getElementById('myOut').innerHTML = 
+ Math.cbrt(parseFloat(document.getElementById('myIn').value))
+}">
+<input type=button value="Math.abs()" onclick= "{
+ document.getElementById('myOut').innerHTML = 
+ Math.abs(parseFloat(document.getElementById('myIn').value))
+}">
+<div id="myOut">...</div><br><br><br>
+
+
+ returns the value of x to the power of y. <br>
+x=<input id="myIn1" type=text value="2">	y=<input id="myIn2" type=text value="5"><br>
+<input type=button value="Math.pow()" onclick= "{
+ document.getElementById('myOut1').innerHTML = 
+ Math.pow(parseFloat(document.getElementById('myIn1').value),parseFloat(document.getElementById('myIn2').value))
+}">
+<div id="myOut1">...</div><br><br><br>
+
+
+<input id="myIn3" type=text value="60"><br>
+<input type=button value="Math.cos()" onclick= "{
+ document.getElementById('myOut3').innerHTML = 
+ Math.cos(parseFloat(document.getElementById('myIn3').value)* Math.PI / 180)
+}">
+<input type=button value="Math.sin()" onclick= "{
+ document.getElementById('myOut3').innerHTML = 
+ Math.sin(parseFloat(document.getElementById('myIn3').value)* Math.PI / 180)
+}">
+<input type=button value="Math.tan()" onclick= "{
+ document.getElementById('myOut3').innerHTML = 
+ Math.tan(parseFloat(document.getElementById('myIn3').value)* Math.PI / 180)
+}">
+<div id="myOut3">...</div><br><br><br>
+
+
+Click to display random number.(1~100)<br>
+<input type=button value="Math.random()" onclick= "{
+ document.getElementById('myOut4').innerHTML = 
+ Math.floor((Math.random() * 100) +1)
+}">
+<div id="myOut4">...</div><br><br><br>
+
+Click to display random number.<br>
+<input type=button value="Math.random()" onclick= "{
+ document.getElementById('myOut10').innerHTML = (Math.random() * 10 +1)}">
+<input type=button value="Math.round()" onclick= "{
+ document.getElementById('myOut11').innerHTML = 
+ Math.round(document.getElementById('myOut10').innerHTML)}">
+<div id="myOut10">...</div>
+<div id="myOut11">...</div><br><br><br>
+
+
+
+4.5 ,5 ,789, 456, 753, 1, -5, -0.6 <br>
+<input type=button value="Math.max()" onclick= "{
+ document.getElementById('myOut6').innerHTML =
+ Math.max(4.5 ,5 ,789, 456, 753, 1, -5, -0.6)
+}">
+<input type=button value="Math.min()" onclick= "{
+ document.getElementById('myOut6').innerHTML =
+ Math.min(4.5 ,5 ,789, 456, 753, 1, -5, -0.6)
+}">
+<div id="myOut6">...</div><br><br><br>
+
+
+
+Click to display random number.<br>
+<input type=button value="Math.random()" onclick= "{
+ document.getElementById('myOut10').innerHTML = (Math.random() * 10 +1)}">
+<input type=button value="Round" onclick= "{
+ document.getElementById('myOut11').innerHTML = 
+ Math.round(document.getElementById('myOut10').innerHTML)}">
+<div id="myOut10">...</div>
+<div id="myOut11">...</div><br><br><br>
+
