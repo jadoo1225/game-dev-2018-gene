@@ -3,11 +3,30 @@
 
 document.getElementById('myDiv01').innerHTML = ''
 for(let x=0; x < document.getElementById('myText01').value; x++){document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>`
-
 }
-
- 
-
 }">
 
-<div id="myDiv01"></div>
+<div id="myDiv01"></div><br><br><br>
+
+
+
+<input type=text id="myText02" value=10>
+<input type=button value="run for loop---square" onclick="{
+
+document.getElementById('myDiv02').innerHTML = ''
+for(let y=0; y < document.getElementById('myText02').value; y++){document.getElementById('myDiv02').innerHTML += `y² is ` + y * y + `<br>`
+}
+}">
+
+<div id="myDiv02"></div><br><br><br>
+
+
+<input type=text id="myText03" value=6>
+<input type=button value="run for loop---cube" onclick="{
+
+document.getElementById('myDiv03').innerHTML = ''
+for(let z=0; z < document.getElementById('myText03').value; z++){document.getElementById('myDiv03').innerHTML += `z³ is ` + z * z * z + `<br>`
+}
+}">
+
+<div id="myDiv03"></div><br><br><br>

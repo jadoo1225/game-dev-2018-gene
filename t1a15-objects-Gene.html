@@ -1,0 +1,76 @@
+
+
+
+
+
+<h3 align=center>t1a15-objects-again-Gene.html</3>
+
+
+<br>Store these Items in a Javascript object <br>
+
+<textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
+   "firstName": "John",
+   "lastName": "Doe",
+   "age": 50,
+   "eyeColor": "blue"
+}
+</textarea><br> 
+    
+<input id="myButton128" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject').value)   
+                                                                         
+    document.getElementById('myDiv128').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
+          myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'                                                                                                                 
+}">
+<br><br>
+<div id='myDiv128'>...</div><br><br><br><br>
+
+
+
+
+
+<textarea id="myTextAreaObject01" rows="8" cols="70" wrap="false">{
+   "Adress": "123456 123th Ave",
+   "Order": "Pineapple pizza",
+   "Price": "$100",
+   "Payment": "Cash"
+}
+</textarea><br> 
+    
+<input id="myButton12801" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject01').value)   
+                                                                         
+    document.getElementById('myDiv12801').innerHTML = 'Adress: ' + myPerson.Adress + ' '+ myPerson.Order + ', Price: '  + 
+          myPerson.Price  + ', Payment: ' + myPerson.Payment + '<br>'                                                                                                                 
+}">
+<br><br>
+<div id='myDiv12801'>...</div><br><br><br><br>
+
+
+
+
+
+<textarea id="myTextAreaObject02" rows="8" cols="70" wrap="false">{
+   "firstName": "Jin",
+   "lastName": "Lee",
+   "age": 30,
+   "job": "Teacher",
+   "gender": "Male",
+   "pet": "pit bull"
+}
+</textarea><br> 
+    
+<input id="myButton12802" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject02').value)   
+                                                                         
+    document.getElementById('myDiv12802').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
+          myPerson.age  + ', Job: ' + myPerson.job + ', gender: ' + myPerson.gender +  ', Pet: ' + myPerson.pet + '<br>'                                                                                                             
+}">
+<br><br>
+<div id='myDiv12802'>...</div><br><br><br><br>

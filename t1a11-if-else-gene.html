@@ -14,5 +14,54 @@
          document.getElementById('myOut').innerHTML = 
            'wow the number is 3<br>'}
 }">
+<div id="myOut">...</div><br><br><br>
 
-<div id="myOut">...</div>
+
+<input id="myIn1" type=text value=99>
+<input type=button value="decision if statement" onclick="{
+   document.getElementById('myOut1').innerHTML = ''
+
+  if ( document.getElementById('myIn1').value < 100){
+      document.getElementById('myOut1').innerHTML += 
+           'less than 100<br>' 
+  } else {
+     document.getElementById('myOut1').innerHTML += 
+           'bigger than 100<br>' 
+  }
+ if ( document.getElementById('myIn1').value == 100){
+         document.getElementById('myOut1').innerHTML = 
+           '100<br>'}
+}">
+<div id="myOut1">...</div><br><br><br>
+
+
+
+<input id="myIn2" type=text value=123456789>
+<input type=button value="decision if statement" onclick="{
+   document.getElementById('myOut2').innerHTML = ''
+x = document.getElementById('myIn2').value
+  if ( x == 123456789){
+      document.getElementById('myOut2').innerHTML += 
+           'This number looks special.<br>' 
+  } else {
+     document.getElementById('myOut2').innerHTML += 
+           'hmmm. well.<br>' 
+  }
+
+}">
+<div id="myOut2">...</div><br><br><br>
+
+
+
+<input id="myIn3" type=text value=2>
+<input type=button value="decision if statement SPECIAL VERSION" onclick="{
+   document.getElementById('myOut3').innerHTML = ''
+
+for(let x=0; x < document.getElementById('myIn3').value; x++){
+if(document.getElementById('myIn3').value % 2 == 0){document.getElementById('myOut3').innerHTML += `Even, `
+} else{document.getElementById('myOut3').innerHTML += 
+           'hmmm Well, Not Even.'
+}
+}
+}">
+<div id="myOut3">...</div><br><br><br>

@@ -26,7 +26,21 @@
  x = document.getElementById('myIn018').value
 
  if(x < 7){document.getElementById('myOut018').innerHTML += 'wow less than 7. You are not lucky'}
- if(x > 7){document.getElementById('myOut018').innerHTML += 'wow more than 7. You are very lucky<br>'}
+ if(x > 7){document.getElementById('myOut018').innerHTML += 'wow more than 7. You are not lucky<br>'}
  if(x == 7){document.getElementById('myOut018').innerHTML += 'wow Lucky 77777777<br>'}
 }">
-<div id="myOut018">...</div>
+<div id="myOut018">...</div><br><br><br>
+
+
+<input type=button value="decision if statement" onclick="{
+   
+   document.getElementById('myOut').innerHTML = ''
+   
+   
+ x = document.getElementById('myIn').value
+
+ if(x < 100){document.getElementById('myOut').innerHTML += 'wow the number is smaller than 100'}
+ if(x > 100){document.getElementById('myOut').innerHTML += 'wow the number is bigger than 100<br>'}
+ if(x == 100){document.getElementById('myOut').innerHTML += 'wow <font color = red>hundred</font>'}
+}">
+<div id="myOut">...</div><br><br><br>

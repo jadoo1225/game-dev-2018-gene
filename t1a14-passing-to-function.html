@@ -1,0 +1,38 @@
+<script>
+function myFun(myIn){
+ alert(myIn)
+}
+function myFun01(myIn01){
+ return myIn01 + '<br>'
+}
+</script>
+<h2 align=center>Passing to functions by Gene</h2>
+
+<input id="myIn" type=text value="123456789"><br>
+<input type=button value="myFun('Hi')" onclick= "{
+ myFun('Hi')
+}">
+<input type=button value="myFun('Bye')" onclick= "{
+ myFun('Bye')
+}">
+<div id="myOut">...<div>
+
+
+
+<input id="myIn" type=text value="123456789"><br>
+<input type=button value="myFun01('WATTUP')" onclick= "{
+ document.getElementById('myOut01').innerHTML += myFun01('<b>WATTUP</b>')
+}">
+<input type=button value="myFun01('Nothing at home')" onclick= "{
+ document.getElementById('myOut01').innerHTML += myFun01('Nothing at home')
+}">
+<input type=button value="myFun01('HOW R U?')" onclick= "{
+ document.getElementById('myOut01').innerHTML += myFun01('HOW R U?')
+}">
+<input type=button value="myFun01('GOOD, U?')" onclick= "{
+ document.getElementById('myOut01').innerHTML += myFun01('GOOD, U?')
+}">
+<input type=button value="myFun01('Fine')" onclick= "{
+ document.getElementById('myOut01').innerHTML += myFun01('Fine')
+}">
+<div id="myOut01"><div>
