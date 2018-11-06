@@ -42,7 +42,7 @@
 <div id='myDiv01'>...</div><br><br>
 
 
-<input type=text id="myNameInput02" placeholder="Enter your Age" value="">
+<input type=text id="myNameInput02" placeholder="Enter your Age (put only number)" size=24 value="">
 <input id="myButton02" type="button" value="Make and Show the class myAge" onclick="{                                                                              
  class myInfo {
     constructor(passlastName, passfristName, passage) {
@@ -66,7 +66,7 @@
 
 <input type=text id="myNameInput04" placeholder="Enter your Last name" value="">
 <input type=text id="myNameInput05" placeholder="Enter your Frist name" value="">
-<input type=text id="myNameInput03" placeholder="Enter your Age" value="">
+<input type=text id="myNameInput03" placeholder="Enter your Age (put only number)" size=24 value="">
 <input id="myButton03" type="button" value="Make and Show the class myInfo" onclick="{                                                                              
  class myInfo {
     constructor(passlastName, passfristName, passage) {
@@ -84,3 +84,43 @@
               // (parseFloat(document.getElementById('myNameInput02').value))                               
 }"><br><br>
 <div id='myDiv03'>...</div><br><br>
+
+
+
+
+
+<input type=text id="myNameInput0100" placeholder="Enter your adress" value="">
+<input type=text id="myNameInput0200" placeholder="Enter your name" value="">
+<input type=text id="myNameInput0300" placeholder="Enter your student # (put only number)" size=30 value="">
+<input type=text id="myNameInput0400" placeholder="Enter your gender" value="">
+<input type=text id="myNameInput0500" placeholder="Enter your grade (put only number)" size=30 value="">
+<input id="myButton0500" type="button" value="Make and Show the class myInfo" onclick="{                                                                              
+ class myInfo {
+    constructor(passName, passAdress, passGrade, passStudent, passGender) {
+       this.myName = passName;
+       this.myAdress = passAdress;
+       this.myGrade= passGrade;
+       this.myStudent= passStudent;
+       this.myGender= passGender;
+    }
+    myShow(){    
+       document.getElementById('myDiv00000001').innerHTML = 'Name : '+ this.myName +'. Grade : '+ this.myGrade +'. Student # : ' + this.myStudent + '. Gender : ' + this.myGender + '. Adress : ' + this.myAdress + '<br>'
+    }
+ }  // end class myUNBF
+                                                                                         
+   myName = new myInfo(document.getElementById('myNameInput0200').value, document.getElementById('myNameInput0100').value, parseFloat(document.getElementById('myNameInput0300').value), parseFloat(document.getElementById('myNameInput0500').value), document.getElementById('myNameInput0400').value)
+   myName.myShow()      
+              // (parseFloat(document.getElementById('myNameInput02').value))                               
+}"><br><br>
+<div id='myDiv00000001'>...</div><br><br>
+
+
+
+
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+
+<input type="button" value="use ResponsiveCode" onclick="{responsiveVoice.speak('I am not gay')
+}"><br><br>
+
