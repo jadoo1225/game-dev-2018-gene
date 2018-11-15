@@ -1,0 +1,246 @@
+<input id="myButton131" type="button" value="Extend a Cat class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myCat
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myCat('Fluffy', 14)
+   myPet.myShow()                                                                           
+}">
+
+<input id="myButton132" type="button" value="Extend a Dog class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myDog extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a great dog who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myDog
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myDog('Lola', 4)
+   myPet.myShow()                                                                           
+}">
+
+<input id="myButton133" type="button" value="Extend a Pig class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myPig extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a great pig who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myPig
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myPig('Nina', 8)
+   myPet.myShow()                                                                           
+}"><br>
+<input id="myText10" type="text" placeholder="What kinds of pet do you have?" size=25 value="">
+<input id="myText20" type="text" placeholder="Enter your pet's name" size=15 value="">
+<input id="myButton1301" type="button" value="Extend a unique class" onclick="{
+class myAnimal {
+    constructor(passKind, passName) {
+       this.myKind = passKind;
+       this.myName = passName;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myKind + '.<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class mykindpet extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Wow. ' + this.myName + ' is the greatest ' + this.myKind + ' in the world.<br>'
+    }                                                                   
+}    // end extended class myPet
+                                                                
+                                                              
+                                                                                                                                                                                                       
+   myPet = new mykindpet(document.getElementById('myText10').value, document.getElementById('myText20').value)
+   myPet.myShow()                                                                           
+}"><br>
+<input id="myText110" type="text" placeholder="Enter your dog's name?" size=25 value="">
+<input id="myText220" type="text" placeholder="Enter your dog's age" size=15 value="">
+<input id="myButton456456456456" type="button" value="Extend a unique class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old.<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myPet extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Wow. ' + this.myName + ' is the greatest dog in the world.' + ' He is ' + this.myAge + ' years old.<br>'
+    }                                                                   
+}    // end extended class myPet
+                                                                
+                                                                                                                                                                                                                                             
+   myAgePet = new myPet(document.getElementById('myText110').value, document.getElementById('myText220').value)
+   myAgePet.myShow() 
+}"><br>     
+<div id='myDiv131'>...</div><br>
+
+
+
+<input id="myText01" type="text" placeholder="Enter your pet's name" value="">
+<input id="myText02" type="text" placeholder="Enter your pet's age" value="">
+<input id="myText03" type="text" placeholder="Enter your name" value="">
+<input id="myButton134" type="button" value="Extend a Pet class" onclick="{
+class myAnimal {
+    constructor(passName, passAge, passOwner) {
+       this.myName = passName;
+       this.myAge = passAge;
+       this.myOwner = passOwner;
+    }
+    myShow(){
+       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old' + '. My owner is ' + this.myOwner + '.<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myPet extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv01').innerHTML = this.myName + ' is a great pet who is ' + this.myAge + ' years old' + '. His owner is ' + this.myOwner + '.<br>'
+    }                                                                   
+}    // end extended class myPet
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPetpet = new myPet(document.getElementById('myText01').value , document.getElementById('myText02').value, document.getElementById('myText03').value)
+   myPetpet.myShow()                                                                           
+}"><br><br>
+<div id='myDiv01'>...</div><br><br><br>
+
+
+
+
+
+
+
+
+
+<input type=text id="myNameInput0100" placeholder="Enter your adress" value="">
+<input type=text id="myNameInput0200" placeholder="Enter your name" value="">
+<input type=text id="myNameInput0300" placeholder="Enter your student # (put only number)" size=30 value="">
+<input type=text id="myNameInput0400" placeholder="Enter your gender" value="">
+<input type=text id="myNameInput0500" placeholder="Enter your grade (put only number)" size=30 value="">
+<input id="myButton0500" type="button" value="befor extend the class myInfo" onclick="{                                                                              
+ class myInfo {
+    constructor(passName, passAdress, passGrade, passStudent, passGender) {
+       this.myName = passName;
+       this.myAdress = passAdress;
+       this.myGrade= passGrade;
+       this.myStudent= passStudent;
+       this.myGender= passGender;
+    }
+    myShow(){    
+       document.getElementById('myDiv00000001').innerHTML = 'Name : '+ this.myName +'. Grade : '+ this.myGrade +'. Student # : ' + this.myStudent + '. Gender : ' + this.myGender + '. Adress : ' + this.myAdress + '<br>'
+    }
+ }  // end class myUNBF
+                                                                                         
+   myName = new myInfo(document.getElementById('myNameInput0200').value, document.getElementById('myNameInput0100').value, parseFloat(document.getElementById('myNameInput0300').value), parseFloat(document.getElementById('myNameInput0500').value), document.getElementById('myNameInput0400').value)
+   myName.myShow()      
+              // (parseFloat(document.getElementById('myNameInput02').value))                               
+}">
+
+<input id="myButton0500" type="button" value="Extend a myInfo" onclick="{                                                                              
+ class myInfo {
+    constructor(passName, passAdress, passGrade, passStudent, passGender) {
+       this.myName = passName;
+       this.myAdress = passAdress;
+       this.myGrade= passGrade;
+       this.myStudent= passStudent;
+       this.myGender= passGender;
+    }
+    myShow(){    
+       document.getElementById('myDiv00000001').innerHTML = 'Name : '+ this.myName +'. Grade : '+ this.myGrade +'. Student # : ' + this.myStudent + '. Gender : ' + this.myGender + '. Adress : ' + this.myAdress + '<br>'
+    }
+ }  // end class myInfo
+
+class myPets extends myInfo {                                                                      
+     myShow(){
+       document.getElementById('myDiv00000001').innerHTML = 'HAHA.' + this.myName + ' live at ' + this.myAdress + '. He is ' + this.myGrade + 'grade. He is ' + this.myGender + '. His student# is ' + this.myStudent + '.<br>'
+    }                                                                   
+}    // end extended class myPet
+                                                                                         
+   myaPet = new myPets(document.getElementById('myNameInput0200').value, document.getElementById('myNameInput0100').value, parseFloat(document.getElementById('myNameInput0300').value), parseFloat(document.getElementById('myNameInput0500').value), document.getElementById('myNameInput0400').value)
+   myaPet.myShow()      
+                                           
+}"><br><br>
+<div id='myDiv00000001'>...</div><br><br>
+
+
+
+
+
+
+If statement + class<br>
+<b>if (this.age <= 2){} </b><br>
+<input id="myText2200" type="text" placeholder="Enter your cat's age" size=15 value="">
+<input id="myButton1378979464561322" type="button" value="Extend if class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv45645645645646444').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myCat extends myAnimal { 
+constructor(passName, passAge, passColor) {
+       super(passName, passAge)
+       this.myColor = passColor;    }                                                                 
+     myShow(){
+       document.getElementById('myDiv45645645645646444').innerHTML += this.myName + ' is a great cat who is ' + this.myAge + ' years old and she is ' + this.myColor + '.<br>'
+    }    
+     myShow2(){
+    if(this.myAge <=2){
+       document.getElementById('myDiv45645645645646444').innerHTML += this.myName + ' pees everywhere, because she is ' + this.myAge + ' years old.<br>'
+   }                                                                 
+}  
+}  // end extended class myCat
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myCat('Helly', parseFloat(document.getElementById('myText2200').value) , 'Black')
+   myPet.myShow()  
+   myPet.myShow2()                                                                          
+}"><br><br>
+
+<div id='myDiv45645645645646444'>...</div><br>

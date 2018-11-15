@@ -1,0 +1,182 @@
+
+
+<h2 align=center>Javascript Classes Introduction by Gene</h2>
+
+<input id="myButton0000" type="button" value="Make and Show the class myAnimal" onclick="{                                                                              
+ class myAnimal {
+    constructor(passName, passAge, passGender) {
+       this.myName = passName;
+       this.myAge = passAge;
+       this.myGender = passGender;
+    }
+    myShow(){    
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old. ' + 'You are ' + this.myGender + '.<br>'
+    }
+ }  // end class myAnimal
+                                                                                         
+   myDog = new myAnimal('Penny', 5, 'boy')
+   myDog.myShow()      
+    }">            
+
+<input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{                                                                              
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){    
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                                                         
+   myDog = new myAnimal('Chico', 5)
+   myDog.myShow()      
+    }">                    
+
+<input id="myButton789789" type="button" value="Make and Show the class myAnimal" onclick="{                                                                              
+ class myAnimal {
+    constructor(passName, passAge, passColor) {
+       this.myName = passName;
+       this.myAge = passAge;
+       this.myColor = passColor;
+    }
+    myShow(){    
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old. ' + 'You are ' + this.myColor + '.<br>'
+    }
+ }  // end class myAnimal
+                                                                                         
+   myDog = new myAnimal('Lola', 9, 'brown')
+   myDog.myShow()      
+                                                       
+}"><br><br>
+<div id='myDiv130'>...</div><br><br>
+
+
+
+
+<input id="myButton01" type="button" value="Make and Show the class myFruit" onclick="{                                                                              
+ class myFruit {
+    constructor(passFruit, passTaste) {
+       this.myFruit = passFruit;
+       this.myTaste = passTaste;
+    }
+    myShow(){    
+       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myFruit + '. You are ' + this.myTaste + '.<br>'
+    }
+ }  // end class myFruit
+                                                                                         
+   myApple = new myFruit('Apple', 'sweet')
+   myApple.myShow()      
+                                              
+}"><br><br>
+<div id='myDiv01'>...</div><br><br>
+
+
+
+
+<input type=text id="myInput0" placeholder="Enter your Name" value="">
+<input id="myButton000000000000" type="button" value="Boooooooooom" onclick="{                                                                              
+ class myInfo {
+    constructor(passName, passStudent) {
+       this.myName = passName;
+       this.myStudent = passStudent;
+    }
+    myShow(){    
+       document.getElementById('myDiv00').innerHTML = 'Hello. I am '+ this.myName + '. I am ' + this.myStudent + '.<br>'
+    }
+ }  // end class myUNBF
+                                                                                         
+   myName = new myInfo(document.getElementById('myInput0').value, 'student')
+   myName.myShow()      
+              // (parseFloat(document.getElementById('myNameInput02').value))                               
+}"><br><br>
+<div id='myDiv00'>...</div><br><br>
+
+
+<input type=text id="myNameInput02" placeholder="Enter your Age (put only number)" size=24 value="">
+<input id="myButton02" type="button" value="Make and Show the class myAge" onclick="{                                                                              
+ class myInfo {
+    constructor(passlastName, passfristName, passage) {
+       this.mylastName = passlastName;
+       this.myfristName = passfristName;
+       this.myage= passage;
+    }
+    myShow(){    
+       document.getElementById('myDiv02').innerHTML = 'Hello. I am '+ this.myfristName +' '+ this.mylastName +'. I am ' + this.myage + 'years old<br>'
+    }
+ }  // end class myUNBF
+                                                                                         
+   myName = new myInfo('Bae', 'Gene', parseFloat(document.getElementById('myNameInput02').value))
+   myName.myShow()      
+              // (parseFloat(document.getElementById('myNameInput02').value))                               
+}"><br><br>
+<div id='myDiv02'>...</div><br><br>
+
+
+
+
+<input type=text id="myNameInput04" placeholder="Enter your Last name" value="">
+<input type=text id="myNameInput05" placeholder="Enter your Frist name" value="">
+<input type=text id="myNameInput03" placeholder="Enter your Age (put only number)" size=24 value="">
+<input id="myButton03" type="button" value="Make and Show the class myInfo" onclick="{                                                                              
+ class myInfo {
+    constructor(passlastName, passfristName, passage) {
+       this.mylastName = passlastName;
+       this.myfristName = passfristName;
+       this.myage= passage;
+    }
+    myShow(){    
+       document.getElementById('myDiv03').innerHTML = 'Hello. I am '+ this.myfristName +' '+ this.mylastName +'. I am ' + this.myage + ' years old.<br>'
+    }
+ }  // end class myUNBF
+                                                                                         
+   myName = new myInfo(document.getElementById('myNameInput04').value, document.getElementById('myNameInput05').value, parseFloat(document.getElementById('myNameInput03').value))
+   myName.myShow()      
+              // (parseFloat(document.getElementById('myNameInput02').value))                               
+}"><br><br>
+<div id='myDiv03'>...</div><br><br>
+
+
+
+
+
+<input type=text id="myNameInput0100" placeholder="Enter your adress" value="">
+<input type=text id="myNameInput0200" placeholder="Enter your name" value="">
+<input type=text id="myNameInput0300" placeholder="Enter your student # (put only number)" size=30 value="">
+<input type=text id="myNameInput0400" placeholder="Enter your gender" value="">
+<input type=text id="myNameInput0500" placeholder="Enter your grade (put only number)" size=30 value="">
+<input id="myButton0500" type="button" value="Make and Show the class myInfo" onclick="{                                                                              
+ class myInfo {
+    constructor(passName, passAdress, passGrade, passStudent, passGender) {
+       this.myName = passName;
+       this.myAdress = passAdress;
+       this.myGrade= passGrade;
+       this.myStudent= passStudent;
+       this.myGender= passGender;
+    }
+    myShow(){    
+       document.getElementById('myDiv00000001').innerHTML = 'Name : '+ this.myName +'. Grade : '+ this.myGrade +'. Student # : ' + this.myStudent + '. Gender : ' + this.myGender + '. Adress : ' + this.myAdress + '<br>'
+    }
+ }  // end class myUNBF
+                                                                                         
+   myName = new myInfo(document.getElementById('myNameInput0200').value, document.getElementById('myNameInput0100').value, parseFloat(document.getElementById('myNameInput0300').value), parseFloat(document.getElementById('myNameInput0500').value), document.getElementById('myNameInput0400').value)
+   myName.myShow()      
+              // (parseFloat(document.getElementById('myNameInput02').value))                               
+}"><br><br>
+<div id='myDiv00000001'>...</div><br><br>
+
+
+
+
+
+
+
+
+
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<input type="text" placeholder="Enter a random word" value="" id="myText123">
+<input type="button" value="use ResponsiveCode" onclick="{responsiveVoice.speak(document.getElementById('myText123').value)
+}"><br><br>
+
