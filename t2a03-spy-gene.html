@@ -83,6 +83,29 @@ document.getElementById('myArea02').value = myString.join('')}"><br><br>
 
 
 
+
+
+
+<script>
+function myFunction() {
+    var str = document.getElementById('myArea01').value
+    var enc = window.btoa(str)
+    document.getElementById('myArea02').value = enc
+}
+
+function myFunction01() {
+    var str = document.getElementById('myArea02').value
+    
+    var dec = window.atob(str)
+    document.getElementById('myArea03').value = dec
+}
+</script>
+
+<input type="button" value="4.Encrypt btoa base64" onclick="myFunction()"><br><br>
+
+
+
+
 <textarea id="myArea02">
 
 </textarea><br>
@@ -163,6 +186,13 @@ for(let myLoop=0; myLoop < myString.length; myLoop++){
 }
 document.getElementById('myArea03').value = myString.join('')}"><br><br>
 
+
+
+
+
+
+
+<input type="button" value="4.Decrypt atob base64" onclick="myFunction01()"><br><br>
 
 <textarea id="myArea03">
 
