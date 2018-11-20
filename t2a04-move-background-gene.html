@@ -1,0 +1,64 @@
+<h2 align=center>Move Background Gene</h2>
+
+
+
+
+
+<img id="myImage01" width= 100
+src="https://thumbs.gfycat.com/MelodicHelplessIsopod-small.gif" style="position:absolute; left:500px; top:260px">
+
+<body id="myBody" style="background-repeat:non-repeat;
+background-size: 80%" background=
+"https://www.atrafloor.com/app/uploads/2017/01/city-life-kids-town-map-flooring-green-680x492.jpg">
+
+
+
+<input type=button value="background move left" onclick="{
+alert(document.getElementById('myBody'))
+document.getElementById('myBody').style.backgroundPosition = '100px 200px'
+}"><br>
+
+<script>
+ let myGlobalX = 0
+ let myClock
+</script>
+
+
+<input id="myButton01" type=button value="background move left" onclick="{
+ myTemp = 'px px'
+ myGlobalX += 5
+ myTemp = myGlobalX + 'px 0px'
+ //myTemp = '0px ' + myGlobalX + 'px' //to move down only
+ document.getElementById('myBody').style.backgroundPosition =myTemp
+}">
+
+<input id="myButton02" type=button value="background move right" onclick="{
+ myTemp = 'px px'
+ myGlobalX -= 5
+ myTemp = myGlobalX + 'px 0px'
+ //myTemp = 'px ' + myGlobalX + 'px' //to move down only
+ document.getElementById('myBody').style.backgroundPosition =myTemp
+}">
+
+<input id="myButton03" type=button value="background move down" onclick="{
+ myTemp = 'px px'
+ myGlobalX -= 5
+ myTemp = '0px ' + myGlobalX + 'px' //to move down only
+ document.getElementById('myBody').style.backgroundPosition =myTemp
+}">
+
+
+<input id="myButton04" type=button value="background move up" onclick="{
+ myTemp = 'px px'
+ myGlobalX += 5
+ myTemp = '0px ' + myGlobalX + 'px' //to move down only
+ document.getElementById('myBody').style.backgroundPosition = myTemp
+}">
+
+
+
+
+<input type=button value="Auto Background" onclick="{
+myClock = setInterval(function(){document.getElementById('myButton02').click()}, 100)
+ 
+}">
