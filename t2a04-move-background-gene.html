@@ -8,7 +8,7 @@
 src="qowlstjr.gif" style="position:absolute; left:500px; top:260px">
 
 <body id="myBody" style="background-repeat:non-repeat;
-background-size: 80%" background=
+background-size: 100%" background=
 "https://www.atrafloor.com/app/uploads/2017/01/city-life-kids-town-map-flooring-green-680x492.jpg">
 
 
@@ -53,12 +53,37 @@ document.getElementById('myBody').style.backgroundPosition = '100px 200px'
  myGlobalX += 5
  myTemp = '0px ' + myGlobalX + 'px' //to move down only
  document.getElementById('myBody').style.backgroundPosition = myTemp
-}">
+}"><br><br>
 
 
 
 
-<input type=button value="Auto Background" onclick="{
+<input type=button value="Auto Background right" onclick="{
 myClock = setInterval(function(){document.getElementById('myButton02').click()}, 100)
- 
-}">
+}"><br><br><br>
+
+
+<input type=button value="Up" onclick="{clearInterval(myClock)
+myClock = setInterval(function(){   document.getElementById('myImage01').style.top = 
+parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
+document.getElementById('myImage01').style.transform= 'rotate(360deg)' }, 100)}">
+
+<input type=button value="Left" onclick="{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage01').style.left = 
+parseInt(document.getElementById('myImage01').style.left) - 5 + 'px'
+document.getElementById('myImage01').style.transform= 'rotate(270deg)' }, 100)}">
+
+
+<input type=button value="Down" onclick="{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage01').style.top = 
+parseInt(document.getElementById('myImage01').style.top) + 5 + 'px'
+document.getElementById('myImage01').style.transform= 'rotate(180deg)' }, 100)}">
+
+
+<input type=button value="Right" onclick="{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage01').style.left = 
+parseInt(document.getElementById('myImage01').style.left) + 5 + 'px'
+document.getElementById('myImage01').style.transform= 'rotate(90deg)' }, 100)}">
