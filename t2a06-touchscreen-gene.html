@@ -1,0 +1,23 @@
+<h2 align=center>Touchcreen Event and to google by Gene</h2>
+<input type=button value="Button Only but wait 300ms" onclick="{
+location = 'https://google.ca'
+}"><br><br>
+
+<b onTouchStart="{
+location = 'https://google.ca'
+}">Touchscreen only</b><br><br>
+
+<b onTouchStarts="{
+location = 'https://google.ca'
+event.preventDefault();
+}" onlick="{
+location = 'https://google.ca'
+}">Both like a button and touchscreen</b> <br><br>
+
+<b onTouchStart="{this.click(): event.preventDefault();}" onlick="{
+location = 'https://google.ca'
+}">Both and better code if identical</b> <br><br>
+
+<input type=button value="Both" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+location = 'https://google.ca'
+}"><br><br>

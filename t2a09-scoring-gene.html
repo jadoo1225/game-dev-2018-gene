@@ -1,0 +1,69 @@
+score
+
+<input id="myScore01" type=text value=0>
+<input type=button value="+1" onclick="{document.getElementById('myScore01').value = (parseFloat(document.getElementById('myScore01').value))+1}">
+<input type=button value="-1" onclick="{document.getElementById('myScore01').value = (parseFloat(document.getElementById('myScore01').value))-1}">
+
+
+<script>
+
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+document.onkeydown = checkKey;
+
+
+
+function checkKey(myEvent) {
+ if(myHitOther('myImage01','myImage03')){document.getElementById('myScore01').value = (parseFloat(document.getElementById('myScore01').value))+1}
+ if(myHitOther('myImage01','myImage03')){document.getElementById('myImage01').style="position:absolute; left:0px; top:100px; width:100; height:100"
+ document.getElementById('myImage03').style="position:absolute; left:500px; top:100px; width:65; height:65"}
+ 
+ 
+ if (myEvent.keyCode == 87){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(0deg)'}
+ if (myEvent.keyCode == 65){document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(270deg)'}
+ if (myEvent.keyCode == 68){document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(90deg)'}
+ if (myEvent.keyCode == 83){document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+     document.getElementById('myImage01').style.transform= 'rotate(180deg)'}
+
+ if (myEvent.keyCode == 38){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) - 14 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(0deg)'}
+ if (myEvent.keyCode == 37){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) - 14 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(270deg)'}
+ if (myEvent.keyCode == 39){document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) + 14 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(90deg)'}
+ if (myEvent.keyCode == 40){document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + 14 + 'px'
+     document.getElementById('myImage03').style.transform= 'rotate(180deg)'}
+
+
+}
+</script>
+
+
+
+
+
+<img id="myImage01" width=100
+src="https://media.giphy.com/media/dJezVlwfVulTykjRQj/giphy.gif" style="position:absolute; left:0px; top:100px; width:100; height:100">
+
+<img id="myImage03" width=50
+src="https://art.ngfiles.com/images/580000/580863_redemer19_idubbbz-alien-dance.gif?f1515990651" style="position:absolute; left:500px; top:100px; width:65; height:65">
+
