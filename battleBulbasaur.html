@@ -1,0 +1,130 @@
+<embed id="mySound01" src="bulbasaur.wav" autostart=false style="position:absolute; left:0px; top:2500px;"></embed>
+<input type=button value="go back to select page" onclick="{
+location = 'gamepage01.html'}"><br>
+
+<b>HP<input type=text id="EnemyHp" value=100>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Snortax----------------------------------------</b>
+<img id="myImage01" width=500
+src="Snortax.png" style="position:absolute; left:1000px; top:60px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<b>HP<input type=text id="myHp" value=500><br><br><br><br><br><br>
+<img id="myImage02" width=500
+src="BulbasaurBack.png" style="position:absolute; left:210px; top:290px;">
+
+-----------------------------------------------------------------Bulbasaur------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+
+<table border=1>
+<br><tr><td>
+<input type=button value=Tackle onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-10
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
+alert('You use Tackle and damage 10, Snortax use Tackle and damage 20')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur lose</b>'
+myFunF()}
+myFun01()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage11').style.left = 
+parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}">
+</td><td>
+<input type=button value=Vine_Whip onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-20
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
+alert('You use Vine_Whip and damage 20, Snortax use Tackle and damage 20')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur lose</b>'
+myFunF()}
+myFun02()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage12').style.left = 
+parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}">
+</td></tr></br>
+<br><tr>
+<td><input type=button value=Razor_Leaf onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-30
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
+alert('You use Razor_Leaf and damage 30, Snortax use Tackle and damage 20')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur lose</b>'
+myFunF()}
+myFun03()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage13').style.left = 
+parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}">
+</td><td>
+<input type=button value=Seed_Bomb onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-35
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
+alert('You use Seed_Bomb and damage 35, Snortax use Tackle and damage 20')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur lose</b>'
+myFunF()}
+myFun04()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage14').style.left = 
+parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}">
+</td></tr></br>
+</table>
+
+<div id="myDiv01">...<div>
+
+
+
+
+
+<script>
+function myFun01() {document.getElementById('myImage11').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+
+function myFun02() {document.getElementById('myImage12').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage11').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+
+function myFun03() {document.getElementById('myImage13').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage11').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+
+function myFun04() {document.getElementById('myImage14').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage11').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+function  myFunV() {document.getElementById('myImage15').style="position:absolute; left:345px; top:100px; width:960; height:540"}
+function  myFunF() {document.getElementById('myImage16').style="position:absolute; left:3450px; top:100px; width:960; height:540"}
+</script>
+
+<img id="myImage11" width=300
+src="Tackle01.png" style="position:absolute; left:0px; top:2000px; width:300; height:300">
+<img id="myImage12" width=300
+src="VineWhip01.png" style="position:absolute; left:500px; top:2000px; width:300; height:300">
+<img id="myImage13" width=300
+src="RazorLeaf01.png" style="position:absolute; left:1000px; top:2000px; width:300; height:300">
+<img id="myImage14" width=300
+src="SeedBomb01.png" style="position:absolute; left:1500px; top:2000px; width:300; height:300">
+<img id="myImage15"
+src="victory.png" style="position:absolute; left:3000px; top:2000px; width:960; height:540" onclick="{location = 'gamepage01.html'}">
+<img id="myImage16"
+src="failure.png" style="position:absolute; left:3000px; top:2000px; width:960; height:540" onclick="{location = 'gamepage01.html'}">
+
+<script>
+ let myGlobalX = 0
+ let myClock
+</script>
