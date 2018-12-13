@@ -28,7 +28,8 @@ myFun01()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage11').style.left = 
-parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}">
+parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound10').play()">
 </td><td>
 <input type=button value=Water_Gun onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-20
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
@@ -44,7 +45,8 @@ myFun02()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage12').style.left = 
-parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}">
+parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound11').play()">
 </td></tr></br>
 <br><tr>
 <td><input type=button value=Aqua_Tail onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-30
@@ -61,7 +63,8 @@ myFun03()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage13').style.left = 
-parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}">
+parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound12').play()">
 </td><td>
 <input type=button value=Hydro_Pump onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-35
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
@@ -77,7 +80,8 @@ myFun04()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage14').style.left = 
-parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}">
+parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound13').play()">
 </td></tr></br>
 </table>
 
@@ -126,3 +130,9 @@ src="failure.png" style="position:absolute; left:3000px; top:2000px; width:960; 
  let myGlobalX = 0
  let myClock
 </script>
+
+
+<audio id="mySound10" src="tackle.mp3"></audio>
+<audio id="mySound11" src="watergun.mp3"></audio>
+<audio id="mySound12" src="aquatail.mp3"></audio>
+<audio id="mySound13" src="hydropump.mp3"></audio>
