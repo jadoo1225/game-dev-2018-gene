@@ -2,21 +2,21 @@
 <input type=button value="go back to select page" onclick="{
 location = 'gamepage01.html'}"><br>
 
-<b>HP<input type=text id="EnemyHp" value=100>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Snortax----------------------------------------</b>
+<b>HP<input type=text id="EnemyHp" value=500>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Snortax----------------------------------------</b>
 <img id="myImage01" width=500
 src="Snortax.png" style="position:absolute; left:1000px; top:60px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <b>HP<input type=text id="myHp" value=500><br><br><br><br><br><br>
-<img id="myImage02" width=500
+<img id="myImage02" width=600
 src="BulbasaurBack.png" style="position:absolute; left:210px; top:290px;">
 
 -----------------------------------------------------------------Bulbasaur------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
 
 <table border=1>
 <br><tr><td>
-<input type=button value=Tackle onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-10
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Tackle and damage 10, Snortax use Tackle and damage 20')
+<input type=button value=Tackle onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Bulbasaur used Tackle , Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'
@@ -31,9 +31,9 @@ document.getElementById('myImage11').style.left =
 parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound10').play()">
 </td><td>
-<input type=button value=Vine_Whip onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-20
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Vine_Whip and damage 20, Snortax use Tackle and damage 20')
+<input type=button value=Vine_Whip onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Bulbasaur used Vine_Whip, Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'
@@ -49,9 +49,9 @@ parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound11').play()">
 </td></tr></br>
 <br><tr>
-<td><input type=button value=Razor_Leaf onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-30
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Razor_Leaf and damage 30, Snortax use Tackle and damage 20')
+<td><input type=button value=Razor_Leaf onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Bulbasaur used Razor_Leaf, Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'
@@ -66,9 +66,9 @@ document.getElementById('myImage13').style.left =
 parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound12').play()">
 </td><td>
-<input type=button value=Seed_Bomb onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-35
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Seed_Bomb and damage 35, Snortax use Tackle and damage 20')
+<input type=button value=Seed_Bomb onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Bulbasaur used Seed_Bomb, Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Bulbasaur win</b>'

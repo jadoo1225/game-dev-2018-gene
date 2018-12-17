@@ -2,21 +2,21 @@
 <input type=button value="go back to select page" onclick="{
 location = 'gamepage01.html'}"><br>
 
-<b>HP<input type=text id="EnemyHp" value=100>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Snortax----------------------------------------</b>
+<b>HP<input type=text id="EnemyHp" value=500>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Snortax----------------------------------------</b>
 <img id="myImage01" width=500
 src="Snortax.png" style="position:absolute; left:1000px; top:60px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <b>HP<input type=text id="myHp" value=500><br><br><br><br><br><br>
-<img id="myImage02" width=500
+<img id="myImage02" width=600
 src="CharmanderBack.png" style="position:absolute; left:210px; top:290px;">
 
 -----------------------------------------------------------------Charmander------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
 
 <table border=1>
 <br><tr><td>
-<input type=button value=Scratch onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-10
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Scratch and damage 10, Snortax use Takle and damage 20')
+<input type=button value=Scratch onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used scratch, Snortax used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
@@ -31,9 +31,9 @@ document.getElementById('myImage11').style.left =
 parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound10').play()">
 </td><td>
-<input type=button value=Ember onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-20
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Ember and damage 20, Snortax use Takle and damage 20')
+<input type=button value=Ember onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used ember, Snortax used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
@@ -49,9 +49,9 @@ parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound11').play()">
 </td></tr></br>
 <br><tr>
-<td><input type=button value=Flamethrower onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-30
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Flamethrower and damage 30, Snortax use Takle and damage 20')
+<td><input type=button value=Flamethrower onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used flamethrower, Snortax used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
@@ -66,9 +66,9 @@ document.getElementById('myImage13').style.left =
 parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound12').play()">
 </td><td>
-<input type=button value=Inferno onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-35
-document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-20}
-alert('You use Inferno and damage 35, Snortax use Takle and damage 20')
+<input type=button value=Inferno onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used inferno, Snortax used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
@@ -136,3 +136,14 @@ src="failure.png" style="position:absolute; left:3000px; top:2000px; width:960; 
 <audio id="mySound11" src="ember.mp3"></audio>
 <audio id="mySound12" src="flamethorwer.mp3"></audio>
 <audio id="mySound13" src="inferno.mp3"></audio>
+
+
+
+
+
+Click to display random number.(1~100)<br>
+<input type=button value="Math.random()" onclick= "{
+ document.getElementById('myOut4').innerHTML = 
+ Math.floor((Math.random() * 100) +1)
+}">
+<div id="myOut4">...</div><br><br><br>
