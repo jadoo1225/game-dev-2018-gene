@@ -1,0 +1,142 @@
+
+<embed id="mySound02" src="BattleSound.mp3" autostart=true style="position:absolute; left:2500px; top:2000px;"></embed>
+<input type=button value="go back to select page" onclick="{
+location = 'gamepage01.html'}"><br>
+
+<b>HP<input type=text id="EnemyHp" value=500>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Snortax----------------------------------------</b>
+<img id="myImage01" width=500
+src="Mewtwo.png" style="position:absolute; left:1000px; top:60px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<b>HP<input type=text id="myHp" value=500><br><br><br><br><br><br>
+<img id="myImage02" width=600
+src="zapdos.png" style="position:absolute; left:210px; top:200px;">
+
+-----------------------------------------------------------------Charmander------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+
+<table border=1>
+<br><tr><td>
+<input type=button value=Thunder_Shock onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used scratch, Snortax used tackle')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+myFunF()}
+myFun01()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage11').style.left = 
+parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound10').play()">
+</td><td>
+<input type=button value=Ancient_Power onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used ember, Snortax used tackle')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+myFunF()}
+myFun02()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage12').style.left = 
+parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound11').play()">
+</td></tr></br>
+<br><tr>
+<td><input type=button value=Thunder onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used flamethrower, Snortax used tackle')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+myFunF()}
+myFun03()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage13').style.left = 
+parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound12').play()">
+</td><td>
+<input type=button value=Zap_Cannon onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
+document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
+alert('Charmander used inferno, Snortax used tackle')
+document.getElementById('myDiv01').innterHTML = ''
+x = document.getElementById('EnemyHp').value
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+myFunV()}
+y = document.getElementById('myHp').value
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+myFunF()}
+myFun04()
+{clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myImage14').style.left = 
+parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}
+document.getElementById('mySound13').play()">
+</td></tr></br>
+</table>
+
+<div id="myDiv01">...<div>
+
+
+<script>
+function myFun01() {document.getElementById('myImage11').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+
+function myFun02() {document.getElementById('myImage12').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage11').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+
+function myFun03() {document.getElementById('myImage13').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage11').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+
+function myFun04() {document.getElementById('myImage14').style="position:absolute; left:650px; top:170px; width:300; height:300"
+document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
+document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
+document.getElementById('myImage11').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
+
+function  myFunV() {document.getElementById('myImage15').style="position:absolute; left:345px; top:100px; width:960; height:540"}
+function  myFunF() {document.getElementById('myImage16').style="position:absolute; left:345px; top:100px; width:960; height:540"}
+</script>
+
+<img id="myImage11" width=300
+src="Thundershock.png" style="position:absolute; left:0px; top:2000px; width:300; height:300">
+<img id="myImage12" width=300
+src="Ancientpower.png" style="position:absolute; left:500px; top:2000px; width:300; height:300">
+<img id="myImage13" width=300
+src="Thunder.png" style="position:absolute; left:1000px; top:2000px; width:300; height:300">
+<img id="myImage14" width=300
+src="ZapCannon.png" style="position:absolute; left:1500px; top:2000px; width:300; height:300">
+<img id="myImage15"
+src="victory.png" style="position:absolute; left:3000px; top:2000px; width:960; height:540" onclick="{location = 'gamepage01.html'}">
+<img id="myImage16"
+src="failure.png" style="position:absolute; left:3000px; top:2000px; width:960; height:540" onclick="{location = 'gamepage01.html'}">
+
+<script>
+ let myGlobalX = 0
+ let myClock
+</script>
+
+
+<audio id="mySound10" src="Thundershock.mp3"></audio>
+<audio id="mySound11" src="zapdos.ogg"></audio>
+<audio id="mySound12" src="thunder.mp3"></audio>
+<audio id="mySound13" src="zapcannon.mp3"></audio>
+
+
+
