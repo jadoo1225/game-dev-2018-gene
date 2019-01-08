@@ -8,7 +8,7 @@ src="Snortax.png" style="position:absolute; left:1000px; top:60px;"><br><br><br>
 
 <b>HP<input type=text id="myHp" value=500><br><br><br><br><br><br>
 <img id="myImage02" width=600
-src="CharmanderBack.png" style="position:absolute; left:210px; top:290px;">
+src="CharmanderBack.png" style="position:absolute; left:210px; top:200px;">
 
 -----------------------------------------------------------------Charmander------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
 
@@ -19,10 +19,10 @@ document.getElementById('myHp').value = (parseFloat(document.getElementById('myH
 alert('Charmander used scratch, Snortax used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
-if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+if(x <= 0){document.getElementById('myDiv01').innerHTML = '<b>charmander win</b>'
 myFunV()}
 y = document.getElementById('myHp').value
-if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+if(y <= 0){document.getElementById('myDiv01').innerHTML = '<b>charmander lose</b>'
 myFunF()}
 myFun01()
 {clearInterval(myClock)
@@ -137,13 +137,3 @@ src="failure.png" style="position:absolute; left:3000px; top:2000px; width:960; 
 <audio id="mySound12" src="flamethorwer.mp3"></audio>
 <audio id="mySound13" src="inferno.mp3"></audio>
 
-
-
-
-
-Click to display random number.(1~100)<br>
-<input type=button value="Math.random()" onclick= "{
- document.getElementById('myOut4').innerHTML = 
- Math.floor((Math.random() * 100) +1)
-}">
-<div id="myOut4">...</div><br><br><br>
