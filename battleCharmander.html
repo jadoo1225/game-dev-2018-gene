@@ -16,76 +16,77 @@ src="CharmanderBack.png" style="position:absolute; left:210px; top:200px;">
 <br><tr><td>
 <input type=button value=Scratch onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Charmander used scratch, Snortax used tackle')
-document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
-if(x <= 0){document.getElementById('myDiv01').innerHTML = '<b>charmander win</b>'
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander win</b>'
 myFunV()}
 y = document.getElementById('myHp').value
-if(y <= 0){document.getElementById('myDiv01').innerHTML = '<b>charmander lose</b>'
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander lose</b>'
 myFunF()}
 myFun01()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage11').style.left = 
 parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound10').play()">
+document.getElementById('mySound10').play()
+if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>Scratch</b>, Snortax used tackle. '}">
 </td><td>
 <input type=button value=Ember onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Charmander used ember, Snortax used tackle')
-document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
-if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander win. </b>'
 myFunV()}
 y = document.getElementById('myHp').value
-if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander lose. </b>'
 myFunF()}
 myFun02()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage12').style.left = 
 parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound11').play()">
+document.getElementById('mySound11').play()
+if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>Ember</b>, Snortax used tackle. '}">
 </td></tr></br>
 <br><tr>
 <td><input type=button value=Flamethrower onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Charmander used flamethrower, Snortax used tackle')
-document.getElementById('myDiv01').innterHTML = ''
+//alert('Charmander used flamethrower, Snortax used tackle')
+
 x = document.getElementById('EnemyHp').value
-if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander win</b>'
 myFunV()}
 y = document.getElementById('myHp').value
-if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander lose</b>'
 myFunF()}
 myFun03()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage13').style.left = 
 parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound12').play()">
+document.getElementById('mySound12').play()
+if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>FlameThrower</b>, Snortax used tackle. '}">
 </td><td>
 <input type=button value=Inferno onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Charmander used inferno, Snortax used tackle')
-document.getElementById('myDiv01').innterHTML = ''
+//alert('Charmander used inferno, Snortax used tackle')
+
 x = document.getElementById('EnemyHp').value
-if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander win</b>'
+if(x <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander win</b>'
 myFunV()}
 y = document.getElementById('myHp').value
-if(y <= 0){document.getElementById('myDiv01').innerHTML += '<b>charmander lose</b>'
+if(y <= 0){document.getElementById('myDiv01').innerHTML += '. Wow <b>charmander lose</b>'
 myFunF()}
 myFun04()
 {clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myImage14').style.left = 
 parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound13').play()">
+document.getElementById('mySound13').play()
+if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>Inferno</b>, Snortax used tackle. '}">
 </td></tr></br>
 </table>
 
 <div id="myDiv01">...<div>
+
 
 
 <script>
@@ -93,22 +94,18 @@ function myFun01() {document.getElementById('myImage11').style="position:absolut
 document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
 document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
 document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
-
 function myFun02() {document.getElementById('myImage12').style="position:absolute; left:650px; top:170px; width:300; height:300"
 document.getElementById('myImage11').style="position:absolute; left:0px; top:2000px; width:300; height:300"
 document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
 document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
-
 function myFun03() {document.getElementById('myImage13').style="position:absolute; left:650px; top:170px; width:300; height:300"
 document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
 document.getElementById('myImage11').style="position:absolute; left:px; top:2000px; width:300; height:300"
 document.getElementById('myImage14').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
-
 function myFun04() {document.getElementById('myImage14').style="position:absolute; left:650px; top:170px; width:300; height:300"
 document.getElementById('myImage12').style="position:absolute; left:0px; top:2000px; width:300; height:300"
 document.getElementById('myImage13').style="position:absolute; left:px; top:2000px; width:300; height:300"
 document.getElementById('myImage11').style="position:absolute; left:0px; top:2000px; width:300; height:300"}
-
 function  myFunV() {document.getElementById('myImage15').style="position:absolute; left:345px; top:100px; width:960; height:540"}
 function  myFunF() {document.getElementById('myImage16').style="position:absolute; left:345px; top:100px; width:960; height:540"}
 </script>
@@ -136,4 +133,3 @@ src="failure.png" style="position:absolute; left:3000px; top:2000px; width:960; 
 <audio id="mySound11" src="ember.mp3"></audio>
 <audio id="mySound12" src="flamethorwer.mp3"></audio>
 <audio id="mySound13" src="inferno.mp3"></audio>
-
