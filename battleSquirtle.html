@@ -16,7 +16,7 @@ src="SquirtleBack.png" style="position:absolute; left:210px; top:200px;">
 <br><tr><td>
 <input type=button value=Tackle onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Squirtle used Tackle, Snortax used Tackle')
+//alert('Squirtle used Tackle, Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Squirtle win</b>' 
@@ -29,11 +29,12 @@ myFun01()
 myClock = setInterval(function(){
 document.getElementById('myImage11').style.left = 
 parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound10').play()">
+document.getElementById('mySound10').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Squirtle used Tackle, Snortax used tackle. '}">
 </td><td>
 <input type=button value=Water_Gun onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Squirtle used Water_Gun, Snortax used Tackle')
+//alert('Squirtle used Water_Gun, Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Squirtle win</b>' 
@@ -46,12 +47,13 @@ myFun02()
 myClock = setInterval(function(){
 document.getElementById('myImage12').style.left = 
 parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound11').play()">
+document.getElementById('mySound11').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Squirtle used Water gun, Snortax used tackle. '}">
 </td></tr></br>
 <br><tr>
 <td><input type=button value=Aqua_Tail onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Squirtle used Aqua_Tail, Snortax used Tackle')
+//alert('Squirtle used Aqua_Tail, Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Squirtle win</b>'
@@ -64,11 +66,12 @@ myFun03()
 myClock = setInterval(function(){
 document.getElementById('myImage13').style.left = 
 parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound12').play()">
+document.getElementById('mySound12').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Squirtle used Aqua Tail, Snortax used tackle. '}">
 </td><td>
 <input type=button value=Hydro_Pump onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Squirtle used Hydro_Pump, Snortax used Tackle')
+//alert('Squirtle used Hydro_Pump, Snortax used Tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Squirtle win</b>' 
@@ -81,11 +84,13 @@ myFun04()
 myClock = setInterval(function(){
 document.getElementById('myImage14').style.left = 
 parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound13').play()">
+document.getElementById('mySound13').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Squirtle used Hydro pump, Snortax used tackle. '}">
 </td></tr></br>
 </table>
 
-<div id="myDiv01">...<div>
+<div id="myDiv01"><div>
+<input type=text value='' size=100 id="myText01" >
 
 
 

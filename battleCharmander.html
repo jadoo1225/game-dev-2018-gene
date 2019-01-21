@@ -28,7 +28,7 @@ myClock = setInterval(function(){
 document.getElementById('myImage11').style.left = 
 parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound10').play()
-if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>Scratch</b>, Snortax used tackle. '}">
+if(x <= 1000){document.getElementById('myText01').value = 'Charmander used Scratch, Snortax used tackle. '}">
 </td><td>
 <input type=button value=Ember onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
@@ -44,7 +44,7 @@ myClock = setInterval(function(){
 document.getElementById('myImage12').style.left = 
 parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound11').play()
-if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>Ember</b>, Snortax used tackle. '}">
+if(x <= 1000){document.getElementById('myText01').value = 'Charmander used Ember, Snortax used tackle. '}">
 </td></tr></br>
 <br><tr>
 <td><input type=button value=Flamethrower onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
@@ -63,7 +63,7 @@ myClock = setInterval(function(){
 document.getElementById('myImage13').style.left = 
 parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound12').play()
-if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>FlameThrower</b>, Snortax used tackle. '}">
+if(x <= 1000){document.getElementById('myText01').value = 'Charmander used FlameThrower, Snortax used tackle. '}">
 </td><td>
 <input type=button value=Inferno onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
@@ -81,11 +81,12 @@ myClock = setInterval(function(){
 document.getElementById('myImage14').style.left = 
 parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}
 document.getElementById('mySound13').play()
-if(x <= 1000){document.getElementById('myDiv01').innerHTML += 'Charmander used <b>Inferno</b>, Snortax used tackle. '}">
+if(x <= 1000){document.getElementById('myText01').value = 'Charmander used Inferno, Snortax used tackle. '}">
 </td></tr></br>
 </table>
 
-<div id="myDiv01">...<div>
+<div id="myDiv01"><div>
+<input type=text value='' size=100 id="myText01" >
 
 
 
