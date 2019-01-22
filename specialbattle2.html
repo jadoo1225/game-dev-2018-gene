@@ -16,7 +16,7 @@ src="Articuno.png" style="position:absolute; left:210px; top:200px;">
 <br><tr><td>
 <input type=button value=Gust onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Articuno used gust, Mewtwo used tackle')
+//alert('Articuno used gust, Mewtwo used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Articuno win</b>'
@@ -29,11 +29,12 @@ myFun01()
 myClock = setInterval(function(){
 document.getElementById('myImage11').style.left = 
 parseInt(document.getElementById('myImage11').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound10').play()">
+document.getElementById('mySound10').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Articuno used gust, Mewtwo used tackle. '}">
 </td><td>
 <input type=button value=Ice_Beam onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Articuno used icebeam, Mewtwo used tackle')
+//alert('Articuno used icebeam, Mewtwo used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Articuno win</b>'
@@ -46,12 +47,13 @@ myFun02()
 myClock = setInterval(function(){
 document.getElementById('myImage12').style.left = 
 parseInt(document.getElementById('myImage12').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound11').play()">
+document.getElementById('mySound11').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Articuno used icebeam, Mewtwo used tackle. '}">
 </td></tr></br>
 <br><tr>
 <td><input type=button value=Blizzard onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Articuno used blizzard, Mewtwo used tackle')
+//alert('Articuno used blizzard, Mewtwo used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Articuno win</b>'
@@ -64,11 +66,12 @@ myFun03()
 myClock = setInterval(function(){
 document.getElementById('myImage13').style.left = 
 parseInt(document.getElementById('myImage13').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound12').play()">
+document.getElementById('mySound12').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Articuno used blizzard, Mewtwo used tackle. '}">
 </td><td>
 <input type=button value=Sky_Attack onclick="{document.getElementById('EnemyHp').value = (parseFloat(document.getElementById('EnemyHp').value))-Math.floor((Math.random() * 100) +1)
 document.getElementById('myHp').value = (parseFloat(document.getElementById('myHp').value))-Math.floor((Math.random() * 100) +1)}
-alert('Articuno used Sky Attack, Mewtwo used tackle')
+//alert('Articuno used Sky Attack, Mewtwo used tackle')
 document.getElementById('myDiv01').innterHTML = ''
 x = document.getElementById('EnemyHp').value
 if(x <= 0){document.getElementById('myDiv01').innerHTML += '<b>Articuno win</b>'
@@ -81,12 +84,13 @@ myFun04()
 myClock = setInterval(function(){
 document.getElementById('myImage14').style.left = 
 parseInt(document.getElementById('myImage14').style.left) + 30 + 'px'}, 25)}
-document.getElementById('mySound13').play()">
+document.getElementById('mySound13').play()
+if(x <= 1000){document.getElementById('myText01').value = 'Articuno used Sky Attack, Mewtwo used tackle.  '}">
 </td></tr></br>
 </table>
 
-<div id="myDiv01">...<div>
-
+<div id="myDiv01"><div>
+<input type=text value='' size=100 id="myText01" >
 
 <script>
 function myFun01() {document.getElementById('myImage11').style="position:absolute; left:650px; top:170px; width:300; height:300"
