@@ -1,6 +1,42 @@
 <h2 align=center>Parcal triangle Magic Pyramid by Gene</h2>
-<input id="myLayers" type=number value=3><br>
+
 
 <input type=button value=go onclick="{
-document.getElementById('myDiv01').innerHTML = document.getElementById('myLayers').value}">
+ myCoolObject = 1
+
+
+
+document.getElementById('myDiv01').innerHTML = ''
+for(let x=1; x <= 1; x++){document.getElementById('myDiv01').innerHTML += [myCoolObject] +'<br>'+ [myCoolObject] + [myCoolObject + myCoolObject] + [myCoolObject] + '<br>' + [myCoolObject] +[myCoolObject + myCoolObject + myCoolObject]+ [myCoolObject + myCoolObject + myCoolObject] + [myCoolObject] +
+ '<br>' + [myCoolObject] + [myCoolObject + myCoolObject + myCoolObject + myCoolObject] + [myCoolObject + myCoolObject + myCoolObject + myCoolObject + myCoolObject + myCoolObject] + [myCoolObject + myCoolObject + myCoolObject + myCoolObject] + [myCoolObject] + '<br>' + [myCoolObject] + [myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject]
++ [myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject] +[myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject] + [myCoolObject+myCoolObject+myCoolObject+myCoolObject+myCoolObject] + [myCoolObject]
+}
+}">
 <div id="myDiv01">...</div>
+
+
+<input type=text value=3 id="myText01">
+<input type=button value="GOGO" onclick="{
+myArray = []
+myArray[0] = 1
+myArray[1] = [myArray[0],myArray[0]+myArray[0],myArray[0]]
+myArray[2] = [myArray[0],myArray[0]+myArray[0]+myArray[0],myArray[0]+myArray[0]+myArray[0],myArray[0]]
+myArray[3] = [myArray[0],myArray[0]+myArray[0]+myArray[0]+myArray[0],myArray[0]+myArray[0]+myArray[0]+myArray[0]+myArray[0]+myArray[0],myArray[0]+myArray[0]+myArray[0]+myArray[0],myArray[0]]
+myArray[4] = [myArray[0],myArray[0]*5,myArray[0]*10,myArray[0]*5,myArray[0]]
+myArray[5] = [myArray[0],myArray[0]*6,myArray[0]*15,myArray[0]*15,myArray[0]*6,myArray[0]]
+myArray[6] = [myArray[0],myArray[0]*7,myArray[0]*21,myArray[0]*30,myArray[0]*21,myArray[0]*7,myArray[0]]
+myArray[7] = [myArray[0],myArray[0]*8,myArray[0]*28,myArray[0]*51,myArray[0]*51,myArray[0]*28,myArray[0]*8,myArray[0]]
+myArray[8] = [myArray[0],myArray[0]*9,myArray[0]*36,myArray[0]*79,myArray[0]*102,myArray[0]*79,myArray[0]*36,myArray[0]*9,myArray[0]]
+
+
+
+
+
+document.getElementById('myDiv02').innerHTML=''
+for(let x=0; x < document.getElementById('myText01').value; x++ ){document.getElementById('myDiv02').innerHTML +=
+ myArray[x]+'<br>'
+}
+
+}">
+<div id="myDiv02">...</div>
+
